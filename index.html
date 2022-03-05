@@ -11,35 +11,44 @@
    <h1 id="title">Shining Star Academy Survey Form</h1>
   <b> <p id="description">Extend your arms in welcome to the future.</p> </b>
    <div>
-   <form id="survey-form" action="survey-form">
-    <label for="name-label" >Name:</label>
-<input type="text" id="name" placeholder="Enter Your Name" required>
 
-   </form>
-</div>
-<div>
-   <form id="survey-form" action="survey-form">
-    <label for="email-label" >Email:</label>
-<input type="text" id="email" placeholder="Enter Your Email" required>
-
-   </form>
-</div>
-
-<div>
-   <form id="survey-form" action="survey-form">
-    <label for="number-label" >Age:</label>
-<input type="number" id="number" placeholder="Enter Your Age" min="08" max="25" required>
-
-   </form>
-
-</div>
-
-<form id="survey-form" action="survey-form">
-    <label for="number-label" >Mobile #:</label>
-<input type="figures" id="number" placeholder="Enter Your Mobile #" required>
-
-   </form>
-
+    <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="08"
+            max="30"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
    <h3>In which class you want to get admission?</h3>
    <select id="dropdown" name="role" class="form-control" required>
      <option disabled selected value>Select Class</option>
@@ -49,21 +58,34 @@
      <option value="preferNo">12th</option>
 </select>
 
-<fieldset>
-<legend>
-<h3>Would you recommend to join Shining Star Academy? </h3> </legend>
-<label for="yes, of course">
-    <input class="input-radio" type="radio" id="yes, of course" name="yes, of course"  > Yes, Of Course
-</label>
+<div class="form-group">
+    <fieldset>
+    <legend>
+    <h3>Would you recommend to join Shining Star Academy? </h3> </legend>
+    <label>
+        <input class="input-radio" type="radio" name="yes of course" value="yes of course" checked > Yes, Of Course
+    </label>
+    
+    <label >
+        <input class="input-radio" type="radio" name="no" value="no" > Not At All
+    </label>
+    
+    <label>
+        <input class="input-radio" type="radio"  name="maybe" value="maybe" > Maybe
+    </label>
+    </fieldset>
+     </div>
 
-<label for="no">
-    <input class="input-radio" type="radio" id="no" name="no" > Not At All
-</label>
+<h3>Do you understand the page easily?</h3>
+<label for="yeah"> Yes</label>
+<input type="checkbox" id="yeah" name="review" value="review">
 
-<label for="maybe">
-    <input class="input-radio" type="radio" id="maybe" name="maybe" > Maybe
-</label>
-</fieldset>
+<label for="yeah">No</label>
+<input type="checkbox" id="yeah" name="review" value="review">
+
+
+
+
 
 
 
@@ -83,7 +105,7 @@
 
 
 
-
+</form>
 
 </body>
 </html>
