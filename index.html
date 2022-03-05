@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <h1 id="title">Shining Star Academy Survey Form</h1>
+  <b> <p id="description">Extend your arms in welcome to the future.</p> </b>
+   <div>
+   <form id="survey-form" action="survey-form">
+    <label for="name-label" >Name:</label>
+<input type="text" id="name" placeholder="Enter Your Name" required>
+
+   </form>
+</div>
+<div>
+   <form id="survey-form" action="survey-form">
+    <label for="email-label" >Email:</label>
+<input type="text" id="email" placeholder="Enter Your Email" required>
+
+   </form>
+</div>
+
+<div>
+   <form id="survey-form" action="survey-form">
+    <label for="number-label" >Age:</label>
+<input type="number" id="number" placeholder="Enter Your Age" min="08" max="25" required>
+
+   </form>
+
+</div>
+
+<form id="survey-form" action="survey-form">
+    <label for="number-label" >Mobile #:</label>
+<input type="figures" id="number" placeholder="Enter Your Mobile #" required>
+
+   </form>
+
+   <h3>In which class you want to get admission?</h3>
+   <select id="dropdown" name="role" class="form-control" required>
+     <option disabled selected value>Select Class</option>
+     <option value="student">9th</option>
+     <option value="job">10th</option>
+     <option value="learner">11th</option>
+     <option value="preferNo">12th</option>
+</select>
+
+<fieldset>
+<legend>
+<h3>Would you recommend to join Shining Star Academy? </h3> </legend>
+<label for="yes, of course">
+    <input class="input-radio" type="radio" id="yes, of course" name="yes, of course"  > Yes, Of Course
+</label>
+
+<label for="no">
+    <input class="input-radio" type="radio" id="no" name="no" > Not At All
+</label>
+
+<label for="maybe">
+    <input class="input-radio" type="radio" id="maybe" name="maybe" > Maybe
+</label>
+</fieldset>
+
+
+
+<div class="form-group">
+    <p>Any comments or suggestions?</p>
+    <textarea
+      id="comments"
+      class="input-textarea"
+      name="comment"
+      placeholder="Enter your comment here..."
+    ></textarea>
+  </div>
+
+
+<button id="submit">Submit</button>
+
+
+
+
+
+
+</body>
+</html>
